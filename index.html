@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+
     <title>Weather app</title>
   </head>
   <body>
@@ -34,7 +36,7 @@
       <main>
         <div class="app-data">
           <div>
-            <h1 class="app-city" id="app-city">Sydney</h1>
+            <h1 class="app-city" id="app-city"></h1>
             <p class="app-details">
               Thursday 09:12, clear sky
               <br />
@@ -43,7 +45,7 @@
           </div>
           <div class="app-temperature">
             <div class="app-icon">⛅</div>
-            <div class="app-temp-value">23</div>
+            <div class="app-temp-value" id="temperature"></div>
             <div class="app-unit">°C</div>
           </div>
         </div>
