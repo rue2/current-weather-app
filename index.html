@@ -3,32 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather app</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a City" required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <h1>Sydney</h1>
-      <p>
-        Thursday 09:12, clear sky
-        <br />
-        Humidity 45%, Wind:87km/h
-      </p>
-      <div>⛅23°C</div>
-    </main>
-    <footer>
-      This project was built by
-      <a href="https://github.com/rue2"> RuePams</a> on
-      <a href="https://github.com/rue2/current-weather-app">Github</a>
-      and
-      <a href="https://cheerful-capybara-111524.netlify.app/"
-        >hosted on Netlify</a
-      >
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a City"
+            required
+            id="search-input"
+          />
+          <input type="submit" value="Search" id="submit-button" />
+        </form>
+      </header>
+      <main>
+        <h1>Sydney</h1>
+        <p>
+          Thursday 09:12, clear sky
+          <br />
+          Humidity 45%, Wind:87km/h
+        </p>
+        <div>⛅23°C</div>
+      </main>
+      <footer>
+        This project was built by
+        <a href="https://github.com/rue2" target="_blank"> RuePams</a> on
+        <a href="https://github.com/rue2/current-weather-app" target="_blank"
+          >Github</a
+        >
+        and
+        <a href="https://cheerful-capybara-111524.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
